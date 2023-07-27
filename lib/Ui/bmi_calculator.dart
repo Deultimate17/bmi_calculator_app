@@ -22,11 +22,8 @@ class BmiApp extends StatefulWidget {
 class _BmiAppState extends State<BmiApp> {
   var clickMe;
   bool isClicked = false;
-  Color _color = Colors.red;
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: ListView(
         scrollDirection: Axis.vertical,
