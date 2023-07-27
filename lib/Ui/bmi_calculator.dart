@@ -380,7 +380,7 @@ class _BmiAppState extends State<BmiApp> {
           onPressed: () {
             double c = mic.height/100;
             int exp = 2;
-            if(mic.weight > 0 && mic.height > 0 && mic.age <= 65) {
+            if(mic.weight > 0 && mic.height > 0 && mic.age > 0) {
               setState(() {
                 operation = (mic.weight / pow(c, exp)).toStringAsFixed(1);
                 Navigator.push(context,
