@@ -156,12 +156,12 @@ class _BmiAppState extends State<BmiApp> {
                             padding: const EdgeInsets.only(top: 10.0),
                             child: Text.rich(TextSpan(
                               children: [
-                                TextSpan(text: '${mic.height}',style: TextStyle(
+                                TextSpan(text: '${mic.height}',style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 36.0,
                                   fontWeight: FontWeight.bold
                                 )),
-                                TextSpan(text: 'cm', style: TextStyle(
+                                const TextSpan(text: 'cm', style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 26.0
@@ -529,13 +529,13 @@ class _BmiAppDetailsState extends State<BmiAppDetails> {
                            onPressed: null,
                            child:  Container(
                          alignment: Alignment.center,
-                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                         constraints: BoxConstraints.expand(
-                           width: 150,
+                         padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                         constraints: const BoxConstraints.expand(
+                           width: 180,
                            height: 40
                          ),
 
-                         child: Text(
+                         child: const Text(
                          'SAVE RESULT',
                          style: TextStyle(
                            color: Colors.white,
